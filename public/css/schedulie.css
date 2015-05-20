@@ -1,5 +1,5 @@
-.body{
-	background-color: #eee;
+body{
+	padding-top:50px;
 }
 
 .navbar.navbar-default{
@@ -22,6 +22,7 @@
 	vertical-align: top;
 	width:200px;
 	margin:5px 5px 0;
+	position:relative;
 }
 
 ul{
@@ -30,18 +31,26 @@ ul{
 
 li.event{
 	box-sizing:border-box;
-	position:relative;
+	position:absolute;
 	text-align: center;
 	width: 100%;
 	border-radius: 10px;
 	border:1px #ccc solid;
 	background-color: #e6e6e6;
 	list-style-type: none;
+	z-index: 100;
 }
 
 .new-event{
+	background-color: #fff;
+	z-index:300;
 	display:none;
 	position:relative;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.4);
+	padding: 10px;
+	margin-top:-20px;
 }
 .new-event .btn{
 	margin-top: 5px;

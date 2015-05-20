@@ -69,7 +69,6 @@
 					{!! Form::open(['url' => 'timeline/delete/'.$timeline->id]) !!}
 						{!! Form::submit('Delete '.$timeline->name, ['class' => 'btn btn-danger form-control']) !!}
 					{!! Form::close() !!}
-					<hr>
 				</div>
 				
 				<ul>
