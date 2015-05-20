@@ -1,3 +1,5 @@
 /vendor
 /node_modules
 .env
+schedulie.sublime-workspace
+schedulie.sublime-project
