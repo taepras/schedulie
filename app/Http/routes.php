@@ -11,7 +11,12 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'EventsController@index');
+
+
+Route::post('timeline/new', 'EventsController@storeTimeline');
+Route::post('timeline/delete/{id}', 'EventsController@destroyTimeline');
+Route::post('event/new', 'EventsController@storeEvent');
 
 Route::get('home', 'HomeController@index');
 
