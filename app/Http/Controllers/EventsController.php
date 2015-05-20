@@ -16,10 +16,7 @@ class EventsController extends Controller {
 	public function index()
 	{
 		$timelines = \App\Timeline::all();
-
-		foreach($timelines as $timeline){
-			$events = $timeline->events();
-		}
+		$events = \App\Event::all()->sortBy('start_time');
 
 		return view('index', compact('timelines', 'events'));
 	}

@@ -2,14 +2,47 @@
 	background-color: #eee;
 }
 
+.navbar.navbar-default{
+	margin:0;
+}
+
 .board{
 	white-space: nowrap;
+}
+
+.timelabel{
+	line-height:100px;
+	float:left;
+	padding-top:50px;
+	padding-left:30px;
 }
 
 .timeline{
 	display: inline-block;
 	vertical-align: top;
 	width:200px;
-	margin:5px;
+	margin:5px 5px 0;
 }
 
+ul{
+	padding:0;
+}
+
+li.event{
+	box-sizing:border-box;
+	position:relative;
+	text-align: center;
+	width: 100%;
+	border-radius: 10px;
+	border:1px #ccc solid;
+	background-color: #e6e6e6;
+	list-style-type: none;
+}
+
+.new-event{
+	display:none;
+	position:relative;
+}
+.new-event .btn{
+	margin-top: 5px;
+}
