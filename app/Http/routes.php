@@ -18,6 +18,7 @@ Route::get('/process', 'EventsController@processView');
 Route::post('timeline/new', 'EventsController@storeTimeline');
 Route::post('timeline/delete/{id}', 'EventsController@destroyTimeline');
 Route::post('event/new', 'EventsController@storeEvent');
+Route::get('event/delete/{id}', 'EventsController@destroyEvent');
 
 Route::get('home', 'HomeController@index');
 

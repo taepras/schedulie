@@ -115,4 +115,11 @@ class EventsController extends Controller {
 		return redirect('/');
 	}
 
+	public function destroyEvent($id)
+	{
+		$event = \App\Event::find($id);
+		$event->delete();
+		return redirect('/');
+	}
+
 }
